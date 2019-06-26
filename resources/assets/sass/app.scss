@@ -1,0 +1,99 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+
+.navbar-light {
+  background-color: green;
+  .navbar-header {
+    .navbar-brand {
+      font-weight: bold;
+      color:white;
+    }
+  }
+  ul.navbar-nav {
+    li{
+      font-weight: bold;
+      a{
+        color:white;
+      }
+      a:hover, a:focus {
+        color: green;
+      }
+      ul.dropdown-menu{
+        background-color: green;
+      }
+    }
+  }
+}
+.mt60 {
+  margin-top: 60px;
+}
+.spaced {
+  margin: 0 5px 0 5px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.huge {
+  font-size: 40px;
+}
+
+//panels
+.panel-green {
+    border-color: $brand-success;
+    > .panel-heading {
+        border-color: $brand-success;
+        color: white;
+        background-color: $brand-success;
+    }
+    > a {
+        color: $brand-success;
+        &:hover {
+            color: darken($brand-success, 15%);
+        }
+    }
+}
+
+.panel-red {
+    border-color: $brand-danger;
+    > .panel-heading {
+        border-color: $brand-danger;
+        color: white;
+        background-color: $brand-danger;
+    }
+    > a {
+        color: $brand-danger;
+        &:hover {
+            color: darken($brand-danger, 15%);
+        }
+    }
+}
+
+.panel-yellow {
+    border-color: $brand-warning;
+    > .panel-heading {
+        border-color: $brand-warning;
+        color: white;
+        background-color: $brand-warning;
+    }
+    > a {
+        color: $brand-warning;
+        &:hover {
+            color: darken($brand-warning, 15%);
+        }
+    }
+}
